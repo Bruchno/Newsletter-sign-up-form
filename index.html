@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main class="main">
+    <section class="image-head">
+      <picture>
+        <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 64rem)">
+        <source srcset="assets/images/illustration-sign-up-tablet.svg" media="(min-width: 48rem)">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="Responsive image">
+      </picture>
+    </section>
+    <form action="" method="get" class="sbmt-form">
+  <h1 class="head">Stay updated!</h1>
+  <p class="description">
+    Join 60,000+ product managers receiving monthly updates on:
+  </p>
+  <div class="teaser">
+    <div class="teaser-before">✓</div> 
+      <p>
+        Product discovery and building what matters
+      </p>
+  </div>
+  <div class="teaser">
+    <div class="teaser-before">✓</div>
+    <p>
+      Measuring to ensure updates are a success
+    </p>
+  </div>
+  <div class="teaser">
+    <div class="teaser-before">✓</div>
+    <p>
+      And much more!
+    </p>
+  </div>
+  <div class="inpt-email">
+    <label for="email-id" class="email">
+    Email address
+  </label><span class="err-message">Valid email required!</span>
+  <input type="email" name="email" id="email-id" class="norm-inpt"
+         placeholder="email@company.com" autofocus>
+
+  </div>
+  
+  <button type="submit" class="btn-normal btn-usal" id="btn-submit" disabled>
+    Subscribe to monthly newsletter</button>
+</form>
+  </main>
+
+
+
+<div class="fixed-overlay" id="modal-success">
+    <div class="modal">
+        <div class="modal_container"> 
+          <header class="modal-header">
+            <div class="teaser-before check-modal">✓</div>
+            <h1 class="head">Thanks for subscribing!</h1>
+            <p class="description">
+              A confirmation email has been sent to 
+              <span id="insert-email">
+                ash@loremcompany.com. 
+              </span> 
+              Please open it and click the button inside to confirm your subscription.
+            </p> 
+          </header>
+          <div class="modal-bottom">
+            <button type="submit" class="btn-normal btn-usal" id="btn-success">
+              Dismiss message
+            </button>
+          </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/scripts.js"></script>
+</body>
+</html>
